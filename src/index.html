@@ -37,7 +37,7 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-8 col-md-8 col-sm-8">
             <div class="shortmenu">
               <ul>
                 <li><a href="#"><span class = "logcolor">Login</span> or <span class = "logcolor">Register</span></a>
@@ -51,7 +51,7 @@
               </ul>
             </div>
 
-            <div class="col-lg-12 class=" col-md-12 class="col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12">
               <div class="input-group stylish-input-group searchline">
                 <input type="text" class="form-control" placeholder="Try our Search">
                 <span class="input-group-addon"> 
@@ -59,8 +59,8 @@
                 </span>
               </div>
             </div>
-            <div class="col-lg-12 class=" col-md-12 class="col-sm-hide">
-              <p id="searchloc"><a ng-click="selectBasket()" style="text-decoration:none;cusor:pointer;">Your Basket &pound{{basketPrice}}({{basketItems}})</a>
+            <div class="col-lg-12 col-md-12 col-sm-hide">
+              <p id="searchloc"><a ng-click="selectBasket()">Your Basket &pound{{basketPrice}}({{basketItems}})</a>
               </p>
             </div>
             <div class="col-lg-2 col-md-hide col-sm-hide">
@@ -96,7 +96,7 @@
                 <p><b>Availability</b>: In Stock</p>
                 <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"> Reviews</span>
                 </p>
-                <button class="btn btn-default" style="width: 100%; font-weight:bold; color:white; background-color:red !important" ng-click="selectProduct(product)">Buy Now</button>
+                <button class="btn btn-default" ng-click="selectProduct(product)">Buy Now</button>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@
           <h1>Basket</h1>
           <ul class="list-group">
             <li class="list-group-item" ng-repeat="items in basket track by $index">
-            </i><span class="badge">{{items.unitPrice}}  </span>{{items.name}}
+              </i><span class="badge">{{items.unitPrice}}  </span>{{items.name}}
             </li>
           </ul>
           <p>total price : &pound {{basketPrice}} </p>
