@@ -1,0 +1,121 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+#wrapper{
+	max-width: 90%;
+	margin:auto;
+	background-color: #6699FF;
+}
+header{
+	background-color: black;
+	max-height:250px;
+}
+
+#logo{
+	padding-left:100px;
+	padding-top: 20px;
+	padding: 20px 0 20px 100px;
+}
+
+
+.shortmenu ul{
+	list-style-type: none;
+}
+.shortmenu ul li{
+	float:right;
+}
+.shortmenu ul li a {
+	padding:10px 10px 10px 10px;
+	text-decoration: none;
+	color:white;
+}
+
+.logcolor{
+	color:red;
+}
+
+.searchline{
+	margin-top:20px;
+	float:left;
+	padding-top: 20px;
+}
+
+#searchloc{
+	float:right;
+	color:white;	
+}
+#searchloc a:hover{
+color:white !important;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+    width:100px;
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+    color:red;
+    float:right;
+}
+
+#container{
+	width:85%;
+	margin:auto;
+	background-color: gray;
+	border:1px solid black;
+}
+#menubar{
+	background-color: #F0FAFF;
+
+}
+#navstyle a{
+	color:black !important;
+	font:Arial !important;
+	background-color: #F0FAFF;
+	font-weight: bold;
+	font-size: 12px;
+
+}
+#navstyle a:hover{
+		background-color: #660033;
+}
+.content{
+	
+	padding:10px 10px 10px 40px;
+	background-color:#6699FF;
+}
+
+.products{
+	width:250px;
+	border:1px solid black;
+	padding:20px;
+	margin-bottom: 20px;
+}
+.products p a{
+	color: black;
+	font-weight: bold;
+}
+
+footer{
+	background-color: black;
+	max-width: 90%;
+	color:white;
+	margin:auto;
+}
+
+footer p{
+	margin-left:500px;
+}

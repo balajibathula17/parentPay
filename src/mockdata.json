@@ -1,0 +1,95 @@
+{
+  "categories": {
+    "name": "Unisex Clothing",
+    "description": "Clothing for boys and girls",
+    "products": [{
+      "name": "Tie",
+      "unitPrice": 2.5,
+      "productCode": "UCL001"
+    }, {
+      "name": "Badge",
+      "unitPrice": 0.5,
+      "productCode": "UCL002"
+    }, {
+      "name": "Backpack",
+      "unitPrice": 8.99,
+      "productCode": "UCL003"
+    },{
+      "name": "A4 pad",
+      "unitPrice": 2.5,
+      "productCode": "STA001"
+    }, {
+      "name": "A5 pad",
+      "unitPrice": 1.75,
+      "productCode": "STA002"
+    }, {
+      "name": "Blue biro pen",
+      "unitPrice": 0.3,
+      "productCode": "STA003"
+    }, {
+      "name": "Black biro pen",
+      "unitPrice": 0.3,
+      "productCode": "STA004"
+    }, {
+      "name": "Red biro pen",
+      "unitPrice": 0.3,
+      "productCode": "STA005"
+    }, {
+      "name": "HB pencil",
+      "unitPrice": 0.25,
+      "productCode": "STA006"
+    }, {
+      "name": "Eraser",
+      "unitPrice": 0.2,
+      "productCode": "STA007"
+    }, {
+      "name": "Pencil case",
+      "unitPrice": 1.95,
+      "productCode": "STA008"
+    }, {
+      "name": "Ruler",
+      "unitPrice": 1.5,
+      "productCode": "STA009"
+    }, {
+      "name": "Calculator",
+      "unitPrice": 9.95,
+      "productCode": "STA010"
+    },{
+        "name": "Trousers",
+        "unitPrice": 5.99,
+        "productCode": "BCL001"
+      }, {
+        "name": "Shirt",
+        "unitPrice": 4.99,
+        "productCode": "BCL002"
+      }, {
+        "name": "Blazer",
+        "unitPrice": 12.99,
+        "productCode": "BCL003"
+      }, {
+        "name": "Sports socks",
+        "unitPrice": 2.99,
+        "productCode": "BCL005"
+      }, {
+        "name": "Sports top",
+        "unitPrice": 7.99,
+        "productCode": "BCL006"
+      },{
+      "name": "Trousers",
+      "unitPrice": 5.99,
+      "productCode": "GCL001"
+    }, {
+      "name": "Skirt",
+      "unitPrice": 5.5,
+      "productCode": "GCL002"
+    }, {
+      "name": "Shirt",
+      "unitPrice": 4.99,
+      "productCode": "GCL003"
+    }, {
+      "name": "Blazer",
+      "unitPrice": 12.99,
+      "productCode": "GCL004"
+    }]
+  }
+  }

@@ -1,0 +1,146 @@
+<!doctype html>
+<html class="no-js" ng-app="parentpay">
+
+<head>
+  <meta charset="utf-8">
+  <title>parentpay</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="favicon.icon">
+
+  <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <!-- bower:css -->
+  <!-- run `gulp wiredep` to automaticaly populate bower styles dependencies -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css({.tmp/serve,src}) styles/app.css -->
+  <!-- inject:css -->
+  <!-- css files will be automaticaly insert here -->
+  <!-- endinject -->
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div ng-controller="MainCtrl">
+    <div id="wrapper">
+      <header>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div id="logo">
+              <a href=""><img src="assets/images/logo.jpg" alt="D & W" style="height:100px; width:200px">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="shortmenu">
+              <ul>
+                <li><a href="#"><span class = "logcolor">Login</span> or <span class = "logcolor">Register</span></a>
+                </li>
+                <li><a href="#">Mywhishlist</a>
+                </li>
+                <li><a href="#">Store Locator</a>
+                </li>
+                <li><a href="#">New Catalogue</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-12 class=" col-md-12 class="col-sm-12">
+              <div class="input-group stylish-input-group searchline">
+                <input type="text" class="form-control" placeholder="Try our Search">
+                <span class="input-group-addon"> 
+                              <button type="submit"><span class="glyphicon glyphicon-search"></span> </button>
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-12 class=" col-md-12 class="col-sm-hide">
+              <p id="searchloc"><a ng-click="selectBasket()" style="text-decoration:none;cusor:pointer;">Your Basket &pound{{basketPrice}}({{basketItems}})</a>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-hide col-sm-hide">
+            </div>
+      </header>
+      <!--end of header-->
+      <div class="container">
+        <div class="jumbotron">
+          <h1>Hello, Customers...!!!</h1>
+          <p>The best way to shop from your iPhone or iPad. Use the new Apple Store app to shop, research, check out upcoming events, and get the most from your store visits.</p>
+        </div>
+        <div id="menubar">
+          <ul class="nav nav-pills" id="navstyle">
+            <li role="presentation"><a href="#">Men</a>
+            </li>
+            <li role="presentation"><a href="#">Women</a>
+            </li>
+            <li role="presentation"><a href="#">Kidswear</a>
+            </li>
+            <li role="presentation"><a href="#">Electronics</a>
+            </li>
+          </ul>
+        </div>
+        <div class="content" ng-show="isOpenBasket">
+          <div class="row">
+            <div class="col-lg-4" ng-repeat="product in products">
+              <div class="products">
+                <p>
+                  <a ng-bind="product.name"></a>
+                </p>
+                <p><a>&pound{{product.unitPrice}}</a>
+                </p>
+                <p><b>Availability</b>: In Stock</p>
+                <p><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"> Reviews</span>
+                </p>
+                <button class="btn btn-default" style="width: 100%; font-weight:bold; color:white; background-color:red !important" ng-click="selectProduct(product)">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content" ng-hide="isOpenBasket">
+          <h1>Basket</h1>
+          <ul class="list-group">
+            <li class="list-group-item" ng-repeat="items in basket track by $index">
+            </i><span class="badge">{{items.unitPrice}}  </span>{{items.name}}
+            </li>
+          </ul>
+          <p>total price : &pound {{basketPrice}} </p>
+          <button ng-click="isOpenBasket = 'false'" class="btn btn-default" style="width: 20%; font-weight:bold; color:white; background-color:green !important">Return to shopping</button>
+          <button ng-click="submitBasket()" class="btn btn-default" style="width: 20%; font-weight:bold; color:white; background-color:green !important">Checkout</button>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <footer>
+          <p>&copy Digital & Wise 2014.</p>
+        </footer>
+      </div>
+      <hr>
+      </div>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+      <!-- build:js(src) scripts/vendor.js -->
+      <!-- bower:js -->
+      <!-- run `gulp wiredep` to automaticaly populate bower script dependencies -->
+      <!-- endbower -->
+      <!-- endbuild -->
+
+      <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+      <!-- inject:js -->
+      <!-- js files will be automaticaly insert here -->
+      <!-- endinject -->
+
+      <!-- inject:partials -->
+      <!-- angular templates will be automatically converted in js and inserted here -->
+      <!-- endinject -->
+      <!-- endbuild -->
+
+</body>
+
+</html>
