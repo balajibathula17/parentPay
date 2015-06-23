@@ -1,0 +1,16 @@
+{
+  "name": "parentpay",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.3.1",
+    "angular": "~1.3.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3.4"
+  },
+  "resolutions": {
+    "jquery": "~2.1.1",
+    "angular": "~1.3.4"
+  }
+}
