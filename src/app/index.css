@@ -12,6 +12,13 @@ body {
   margin: auto;
   background-color: #6699FF;
 }
+
+#wrapper 1{
+  max-width: 90%;
+  margin: auto;
+  background-color: #6699FF;
+}
+
 header {
   background-color: black;
   max-height: 250px;
